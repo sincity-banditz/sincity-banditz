@@ -1,16 +1,30 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@layer utilities {
+  .f-center {
+    @apply flex justify-center items-center;
+  }
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+@layer components {
+  .btn {
+    @apply px-8 py-4 rounded-lg font-medium transition-colors;
+  }
+  .btn-brand {
+    @apply btn bg-brand-200 hover:bg-brand-100;
+  }
+  .btn-border {
+    @apply btn border hover:bg-white/20;
+  }
 }
 
-* {
-  box-sizing: border-box;
+@layer base {
+  body {
+    font-family: Montserrat, sans;
+    @apply text-white bg-neutral-900;
+  }
 }
