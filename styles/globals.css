@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
 
 @layer utilities {
   .f-center {
@@ -12,7 +12,7 @@
 
 @layer components {
   .btn {
-    @apply px-8 py-4 rounded-lg transition-colors;
+    @apply px-4 py-2 rounded-lg transition-colors cursor-pointer;
   }
   .btn-brand {
     @apply btn bg-brand-200 hover:bg-brand-100;
@@ -20,11 +20,17 @@
   .btn-border {
     @apply btn border hover:bg-white/20;
   }
+  .btn-neutral {
+    @apply btn bg-neutral-700 hover:bg-neutral-600;
+  }
 }
 
 @layer base {
   body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     @apply text-white bg-neutral-900;
+  }
+  ::selection {
+    @apply bg-brand-200 text-white;
   }
 }

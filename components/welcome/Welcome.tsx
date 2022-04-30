@@ -4,7 +4,7 @@ const Welcome = () => {
   return (
     <section className="relative">
       <Video />
-      <div className="container h-full f-center flex-col gap-y-4 py-36 text-center">
+      <div className="container h-full f-center flex-col gap-y-4 pb-36 pt-52 text-center">
         <h1 className="text-6xl sm:text-7xl font-bold">
           Best team{" "}
           <span className="font-extrabold text-brand-200">SinCity Banditz</span>
@@ -15,8 +15,8 @@ const Welcome = () => {
           ever since the 1500s.
         </p>
         <div className="flex">
-          <button className="btn-brand mr-4">Join Now</button>
-          <button className="btn-border">Our Team</button>
+          <button className="btn-brand px-8 py-4 mr-4">Join Now</button>
+          <button className="btn-border px-8 py-4">Our Team</button>
         </div>
       </div>
     </section>

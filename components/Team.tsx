@@ -23,7 +23,7 @@ const Team = () => {
           >
             <div className="relative aspect-square">
               <Image
-                className="rounded-lg"
+                className="rounded-lg object-cover"
                 src={`/images/avatars/${member.avatar}`}
                 layout="fill"
               />
