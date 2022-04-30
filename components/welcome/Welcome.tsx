@@ -2,9 +2,9 @@ import Video from "./Video";
 
 const Welcome = () => {
   return (
-    <section className="relative h-[35rem]">
+    <section className="relative">
       <Video />
-      <div className="container h-full f-center flex-col gap-y-4 text-center">
+      <div className="container h-full f-center flex-col gap-y-4 py-36 text-center">
         <h1 className="text-6xl sm:text-7xl font-bold">
           Best team{" "}
           <span className="font-extrabold text-brand-200">SinCity Banditz</span>
