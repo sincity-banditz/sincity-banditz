@@ -4,13 +4,17 @@ import { MenuIcon } from "@heroicons/react/outline";
 import Logo from "../public/images/logo.svg";
 
 const navigation = [
-  { name: "Home", href: "#" },
-  { name: "Team", href: "#" },
-  { name: "Projects", href: "#" },
-  { name: "Contact", href: "#" },
+  { name: "Home", location: "welcome" },
+  { name: "Team", location: "team" },
+  { name: "Projects", location: "#" },
+  { name: "Contact", location: "#" },
 ];
 
 const Navbar = () => {
+  const scrollTo = (href: string) => {
+    document.getElementById(href)!.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <nav className="fixed z-10 w-full bg-neutral-800/90 backdrop-blur-lg">
       <Disclosure
@@ -27,6 +31,7 @@ const Navbar = () => {
             <li
               className="btn-neutral text-neutral-100"
               key={item.name}
+              onClick={() => scrollTo(item.location)}
             >
               {item.name}
             </li>
@@ -46,6 +51,7 @@ const Navbar = () => {
             <li
               className="btn-neutral rounded-none bg-transparent text-neutral-100"
               key={item.name}
+              onClick={() => scrollTo(item.location)}
             >
               {item.name}
             </li>

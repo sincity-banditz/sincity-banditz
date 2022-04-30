@@ -2,7 +2,7 @@ import Video from "./Video";
 
 const Welcome = () => {
   return (
-    <section className="relative">
+    <section className="relative" id="welcome">
       <Video />
       <div className="container h-full f-center flex-col gap-y-4 pb-36 pt-52 text-center">
         <h1 className="text-6xl sm:text-7xl font-bold">

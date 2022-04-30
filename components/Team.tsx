@@ -9,7 +9,7 @@ const members = [
 
 const Team = () => {
   return (
-    <section className="container py-8">
+    <section className="container py-8" id="team">
       <h2 className="text-5xl font-bold text-brand-200">Meet our team</h2>
       <p className="text-neutral-200">
         Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -17,10 +17,7 @@ const Team = () => {
       </p>
       <ul className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-4">
         {members.map((member) => (
-          <li
-            className="p-8 rounded-lg bg-neutral-800"
-            key={member.name}
-          >
+          <li className="p-8 rounded-lg bg-neutral-800" key={member.name}>
             <div className="relative aspect-square">
               <Image
                 className="rounded-lg object-cover"
