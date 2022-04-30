@@ -1,3 +1,4 @@
+import scrollTo from "../../helpers/scrollTo";
 import Video from "./Video";
 
 const Welcome = () => {
@@ -16,7 +17,12 @@ const Welcome = () => {
         </p>
         <div className="flex">
           <button className="btn-brand px-8 py-4 mr-4">Join Now</button>
-          <button className="btn-border px-8 py-4">Our Team</button>
+          <button
+            className="btn-border px-8 py-4"
+            onClick={() => scrollTo("team")}
+          >
+            Our Team
+          </button>
         </div>
       </div>
     </section>

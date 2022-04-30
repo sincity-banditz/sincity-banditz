@@ -1,6 +1,6 @@
-import Link from "next/link";
 import { Disclosure } from "@headlessui/react";
 import { MenuIcon } from "@heroicons/react/outline";
+import scrollTo from "../helpers/scrollTo";
 import Logo from "../public/images/logo.svg";
 
 const navigation = [
@@ -11,21 +11,16 @@ const navigation = [
 ];
 
 const Navbar = () => {
-  const scrollTo = (href: string) => {
-    document.getElementById(href)!.scrollIntoView({ behavior: "smooth" });
-  };
-
   return (
     <nav className="fixed z-10 w-full bg-neutral-800/80 backdrop-blur-lg">
       <Disclosure
         as="div"
         className="container flex items-center justify-between h-16"
       >
-        <Link href="/">
-          <a>
-            <Logo className="fill-brand-200 hover:fill-brand-100 transition-colors" />
-          </a>
-        </Link>
+        <Logo
+          className="fill-brand-200 hover:fill-brand-100 transition-colors cursor-pointer"
+          onClick={() => scrollTo("welcome")}
+        />
         <ul className="hidden md:flex items-center gap-x-4">
           {navigation.map((item) => (
             <li
