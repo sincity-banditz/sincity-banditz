@@ -29,7 +29,7 @@ const Team = () => {
               />
             </div>
             <h3 className="mt-2 text-xl font-semibold">{member.name}</h3>
-            <div className="mt-2 py-2 rounded-lg text-center text-neutral-200 bg-brand-200">
+            <div className="mt-2 py-2 rounded-lg text-center bg-brand-200">
               {member.role}
             </div>
           </li>
