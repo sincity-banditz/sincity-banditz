@@ -1,10 +1,11 @@
 import Image from "next/image";
 
 const members = [
-  { name: "Gigantic", avatar: "gigantic.jpg", role: "Sniper" },
-  { name: "Brandan", avatar: "brandan.png", role: "Attacker" },
-  { name: "Minny", avatar: "minny.webp", role: "Captain" },
-  { name: "Unspeakable", avatar: "unspekable.webp", role: "Tank" },
+  { name: "Gigantic", avatar: "gigantic.jpg", role: "Captain" },
+  { name: "Brandan", avatar: "brandan.png", role: "Sniper" },
+  { name: "Minny", avatar: "minny.webp", role: "Anything" },
+  { name: "Unspeakable", avatar: "unspekable.webp", role: "Trainer" },
+  { name: "Leroy", avatar: "brandan.png", role: "Something" },
 ];
 
 const Team = () => {
@@ -15,9 +16,9 @@ const Team = () => {
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry.
       </p>
-      <ul className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-4">
+      <ul className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mt-4">
         {members.map((member) => (
-          <li className="p-8 rounded-lg bg-neutral-800" key={member.name}>
+          <li className="p-4 rounded-lg bg-neutral-800" key={member.name}>
             <div className="relative aspect-square">
               <Image
                 className="rounded-lg object-cover"

@@ -16,7 +16,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed z-10 w-full bg-neutral-800/90 backdrop-blur-lg">
+    <nav className="fixed z-10 w-full bg-neutral-800/80 backdrop-blur-lg">
       <Disclosure
         as="div"
         className="container flex items-center justify-between h-16"
