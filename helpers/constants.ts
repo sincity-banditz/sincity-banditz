@@ -1,12 +1,14 @@
 import * as yup from "yup";
 import { HeartIcon, GlobeIcon, PencilAltIcon } from "@heroicons/react/outline";
 
+// Locations are html elements id
 export const navigation = [
   { name: "Home", location: "welcome" },
   { name: "Team", location: "team" },
   { name: "Join", location: "join" },
 ];
 
+// To update avatars go to /public/images/avatars
 export const members = [
   { name: "Gigantic", avatar: "gigantic.jpg", role: "Captain" },
   { name: "Brandan", avatar: "brandan.png", role: "Sniper" },
@@ -15,6 +17,7 @@ export const members = [
   { name: "Leroy", avatar: "brandan.png", role: "Something" },
 ];
 
+// Join request form points
 export const points = [
   {
     text: "You will need to be great at teamwork. You must treat everyone with up-most respect.",

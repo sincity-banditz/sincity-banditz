@@ -1,4 +1,5 @@
 const Video = () => {
+  // To change video go to /public/videos/
   return (
     <div className="absolute -z-10 w-full h-full">
       <video
