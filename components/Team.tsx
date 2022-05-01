@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { members } from "../helpers/constants";
+import { members } from "helpers/constants";
 
 const Team = () => {
   return (

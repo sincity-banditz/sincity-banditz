@@ -1,8 +1,8 @@
 import { Disclosure } from "@headlessui/react";
 import { MenuIcon } from "@heroicons/react/outline";
-import scrollTo from "../helpers/scrollTo";
-import { navigation } from "../helpers/constants";
-import Logo from "../public/images/logo.svg";
+import scrollTo from "helpers/scrollTo";
+import { navigation } from "helpers/constants";
+import Logo from "public/images/logo.svg";
 
 const Navbar = () => {
   return (

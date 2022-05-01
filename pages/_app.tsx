@@ -1,7 +1,7 @@
-import "../styles/globals.css";
 import type { AppProps } from "next/app";
 import axios from "axios";
-import Navbar from "../components/Navbar";
+import Navbar from "components/Navbar";
+import "styles/globals.css";
 
 axios.defaults.baseURL = process.env.NEXT_PUBLIC_BACKEND_URL;
 

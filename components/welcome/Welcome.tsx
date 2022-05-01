@@ -1,5 +1,5 @@
-import scrollTo from "../../helpers/scrollTo";
-import Video from "./Video";
+import scrollTo from "helpers/scrollTo";
+import Video from "components/welcome/Video";
 
 const Welcome = () => {
   return (
@@ -13,8 +13,8 @@ const Welcome = () => {
         </h1>
         <p className="sm:w-3/4 text-xl text-neutral-200">
           Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industrys standard dummy text
-          ever since the 1500s.
+          industry. Lorem Ipsum has been the industrys standard dummy text ever
+          since the 1500s.
         </p>
         <div className="flex gap-x-4">
           <button

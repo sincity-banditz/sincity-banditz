@@ -5,9 +5,9 @@ import {
   points,
   joinInitialValues,
   joinValidationSchema,
-} from "../../helpers/constants";
-import Input from "./Input";
-import Spinner from "./Spinner";
+} from "helpers/constants";
+import Input from "components/join/Input";
+import Spinner from "components/join/Spinner";
 
 const Join = () => {
   const [isSent, setIsSent] = useState(false);
