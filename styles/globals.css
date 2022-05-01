@@ -12,7 +12,7 @@
 
 @layer components {
   .btn {
-    @apply px-4 py-2 rounded-lg transition-colors cursor-pointer;
+    @apply px-4 py-2 rounded-lg font-medium transition-colors cursor-pointer;
   }
   .btn-brand {
     @apply btn bg-brand hover:bg-brand-100;

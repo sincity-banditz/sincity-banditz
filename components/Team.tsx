@@ -9,7 +9,7 @@ const Team = () => {
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry.
       </p>
-      <ul className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mt-4">
+      <ul className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mt-8">
         {members.map((member) => (
           <li className="p-4 rounded-lg bg-neutral-800" key={member.name}>
             <div className="relative aspect-square">
@@ -20,7 +20,7 @@ const Team = () => {
               />
             </div>
             <h3 className="mt-2 text-xl font-semibold">{member.name}</h3>
-            <div className="mt-2 py-2 rounded-lg text-center bg-brand">
+            <div className="mt-2 py-2 rounded-lg font-medium text-center bg-brand">
               {member.role}
             </div>
           </li>
