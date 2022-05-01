@@ -1,3 +1,7 @@
 export default (location: string) => {
-  document.getElementById(location)!.scrollIntoView({ behavior: "smooth" });
+  window.scrollTo({
+    // Top = element offset - navbar height
+    top: document.getElementById(location)!.offsetTop - 64,
+    behavior: "smooth",
+  });
 };

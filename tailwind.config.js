@@ -1,7 +1,7 @@
 module.exports = {
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
+    "./pages/**/*.tsx",
+    "./components/**/*.tsx",
   ],
   theme: {
     extend: {
@@ -12,9 +12,9 @@ module.exports = {
       },
       colors: {
         brand: {
+          DEFAULT: "#dc2626",
           100: "#ef4444",
-          200: "#dc2626",
-          300: "#b91c1c",
+          200: "#b91c1c",
         },
         neutral: {
           100: "#d0d0d0",

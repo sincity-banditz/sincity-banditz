@@ -1,17 +1,10 @@
 import Image from "next/image";
-
-const members = [
-  { name: "Gigantic", avatar: "gigantic.jpg", role: "Captain" },
-  { name: "Brandan", avatar: "brandan.png", role: "Sniper" },
-  { name: "Minny", avatar: "minny.webp", role: "Anything" },
-  { name: "Unspeakable", avatar: "unspekable.webp", role: "Trainer" },
-  { name: "Leroy", avatar: "brandan.png", role: "Something" },
-];
+import { members } from "../helpers/constants";
 
 const Team = () => {
   return (
-    <section className="container py-8" id="team">
-      <h2 className="text-5xl font-bold text-brand-200">Meet our team</h2>
+    <section id="team" className="container py-16">
+      <h2 className="title">Meet our team</h2>
       <p className="text-neutral-200">
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry.
@@ -27,7 +20,7 @@ const Team = () => {
               />
             </div>
             <h3 className="mt-2 text-xl font-semibold">{member.name}</h3>
-            <div className="mt-2 py-2 rounded-lg text-center bg-brand-200">
+            <div className="mt-2 py-2 rounded-lg text-center bg-brand">
               {member.role}
             </div>
           </li>

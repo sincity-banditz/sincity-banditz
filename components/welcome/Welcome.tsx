@@ -3,20 +3,26 @@ import Video from "./Video";
 
 const Welcome = () => {
   return (
-    <section className="relative" id="welcome">
+    <section id="welcome" className="relative">
       <Video />
-      <div className="container h-full f-center flex-col gap-y-4 pb-36 pt-52 text-center">
-        <h1 className="text-6xl sm:text-7xl font-bold">
+      {/* Padding top = default padding + navbar height */}
+      <div className="flex flex-col items-center gap-y-4 container pb-36 pt-52 text-center">
+        <h1 className="text-7xl font-bold">
           Best team{" "}
-          <span className="font-extrabold text-brand-200">SinCity Banditz</span>
+          <span className="font-extrabold text-brand">SinCity Banditz</span>
         </h1>
-        <p className="w-[60rem] max-w-full text-xl text-neutral-200">
+        <p className="sm:w-3/4 text-xl text-neutral-200">
           Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry&#39;s standard dummy text
+          industry. Lorem Ipsum has been the industrys standard dummy text
           ever since the 1500s.
         </p>
-        <div className="flex">
-          <button className="btn-brand px-8 py-4 mr-4">Join Now</button>
+        <div className="flex gap-x-4">
+          <button
+            className="btn-brand px-8 py-4"
+            onClick={() => scrollTo("join")}
+          >
+            Join Now
+          </button>
           <button
             className="btn-border px-8 py-4"
             onClick={() => scrollTo("team")}
