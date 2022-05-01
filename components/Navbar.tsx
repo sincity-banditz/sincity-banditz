@@ -12,7 +12,7 @@ const Navbar = () => {
         className="flex items-center justify-between container h-16"
       >
         <Logo
-          className="fill-brand hover:fill-brand-100 transition-colors cursor-pointer"
+          className="fill-brand hover:fill-brand-light transition-colors cursor-pointer"
           onClick={() => scrollTo("welcome")}
         />
 

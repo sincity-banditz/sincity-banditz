@@ -15,7 +15,7 @@
     @apply px-4 py-2 rounded-lg font-medium transition-colors cursor-pointer;
   }
   .btn-brand {
-    @apply btn bg-brand hover:bg-brand-100;
+    @apply btn bg-brand hover:bg-brand-light;
   }
   .btn-neutral {
     @apply btn bg-neutral-700 hover:bg-neutral-600 text-neutral-200;

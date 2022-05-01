@@ -1,8 +1,5 @@
 module.exports = {
-  content: [
-    "./pages/**/*.tsx",
-    "./components/**/*.tsx",
-  ],
+  content: ["./pages/**/*.tsx", "./components/**/*.tsx"],
   theme: {
     extend: {
       container: {
@@ -13,8 +10,8 @@ module.exports = {
       colors: {
         brand: {
           DEFAULT: "#dc2626",
-          100: "#ef4444",
-          200: "#b91c1c",
+          light: "#ef4444",
+          dark: "#b91c1c",
         },
         neutral: {
           100: "#d0d0d0",
