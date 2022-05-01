@@ -3,6 +3,8 @@ import nodemailer from "nodemailer";
 
 const handler = async (req: NextApiRequest, res: NextApiResponse) => {
   if (req.method === "POST") {
+    const { username, age, email, experience } = req.body;
+
     const transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
@@ -16,21 +18,28 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
       to: process.env.EMAIL,
       subject: "Team request",
       html: `
-        <main>
-            <strong>Username</strong>
-            <p>${req.body.username}</p>
-            <strong>Email</strong>
-            <p>${req.body.email}</p>
-            <strong>Age</strong>
-            <p>${req.body.age}</p>
-            <strong>Experience</strong>
-            <p>${req.body.experience}</p>
-        </main>
+      <main>
+        <strong>Username</strong>
+        <p>${username}</p>
+        <strong>Age</strong>
+        <p>${age}</p>
+        <strong>Email</strong>
+        <p>${email}</p>
+        <strong>Experience</strong>
+        <p>${experience}</p>
+      </main>
       `,
     };
 
-    await transporter.sendMail(mailOptions);
-    res.end();
+    transporter.sendMail(mailOptions, (error) => {
+      if (error) {
+        res.status(500).end();
+      } else {
+        res.end();
+      }
+    });
+  } else {
+    res.status(404).end();
   }
 };
 
