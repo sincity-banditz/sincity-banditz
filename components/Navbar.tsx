@@ -1,8 +1,8 @@
+import Image from "next/image";
 import { Disclosure } from "@headlessui/react";
 import { MenuIcon } from "@heroicons/react/outline";
 import scrollTo from "helpers/scrollTo";
 import { navigation } from "helpers/constants";
-import Logo from "public/images/logo.svg";
 
 const Navbar = () => {
   return (
@@ -11,9 +11,12 @@ const Navbar = () => {
         as="div"
         className="flex items-center justify-between container h-16"
       >
-        <Logo
-          className="fill-brand hover:fill-brand-light transition-colors cursor-pointer"
+        <Image
+          src="/images/logo.png"
+          className="hover:brightness-125 transition cursor-pointer"
           onClick={() => scrollTo("welcome")}
+          width={48}
+          height={48}
         />
 
         {/* Desktop */}
@@ -30,10 +33,7 @@ const Navbar = () => {
         </ul>
 
         {/* Mobile */}
-        <Disclosure.Button
-          as="button"
-          className="md:hidden btn-neutral p-2"
-        >
+        <Disclosure.Button as="button" className="md:hidden btn-neutral p-2">
           <MenuIcon className="h-6 w-6" />
         </Disclosure.Button>
         <Disclosure.Panel
