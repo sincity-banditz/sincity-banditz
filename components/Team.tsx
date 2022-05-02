@@ -16,6 +16,7 @@ const Team = () => {
               <Image
                 className="rounded-lg object-cover"
                 src={`/images/avatars/${member.avatar}`}
+                alt={member.name}
                 layout="fill"
               />
             </div>

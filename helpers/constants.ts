@@ -10,10 +10,10 @@ export const navigation = [
 
 // To update avatars go to /public/images/avatars
 export const members = [
-  { name: "Gigantic", avatar: "gigantic.jpg", role: "Captain" },
+  { name: "Gigantic", avatar: "gigantic.png", role: "Captain" },
   { name: "Brandan", avatar: "brandan.png", role: "Sniper" },
-  { name: "Minny", avatar: "minny.webp", role: "Anything" },
-  { name: "Unspeakable", avatar: "unspekable.webp", role: "Trainer" },
+  { name: "Minny", avatar: "minny.png", role: "Anything" },
+  { name: "Unspeakable", avatar: "unspekable.png", role: "Trainer" },
   { name: "Leroy", avatar: "brandan.png", role: "Something" },
 ];
 
