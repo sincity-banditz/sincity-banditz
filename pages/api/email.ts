@@ -14,19 +14,25 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
     });
 
     const mailOptions = {
-      from: req.body.email,
-      to: process.env.EMAIL,
-      subject: "Team request",
+      from: process.env.EMAIL,
+      to: email,
+      subject: "SinCity Banditz - Team Request",
       html: `
       <main>
-        <strong>Username</strong>
-        <p>${username}</p>
-        <strong>Age</strong>
-        <p>${age}</p>
-        <strong>Email</strong>
-        <p>${email}</p>
-        <strong>Experience</strong>
-        <p>${experience}</p>
+        <h1 style="color:#dc2626;">Hi ${username} thank you for your team request!</h1>
+        <table style="color: #1a1616; border-collapse: collapse;">
+          <tr>
+            <th style="border: 1px solid #1a1616;">Username</th>
+            <th style="border: 1px solid #1a1616;">Age</th>
+            <th style="border: 1px solid #1a1616;">Experience</th>
+          </tr>
+          <tr>
+            <td style="border: 1px solid #1a1616;">${username}</td>
+            <td style="border: 1px solid #1a1616;">${age}</td>
+            <td style="border: 1px solid #1a1616;">${experience}</td>
+          </tr>
+        </table>
+        <p style="color:#1a1616;">We will answer as soon as possible.</p>
       </main>
       `,
     };
