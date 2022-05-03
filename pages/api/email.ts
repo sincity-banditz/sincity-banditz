@@ -32,7 +32,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
             <td style="border: 1px solid #1a1616;">${experience}</td>
           </tr>
         </table>
-        <p style="color:#1a1616;">We will answer as soon as possible.</p>
+        <p style="color:#1a1616;">This message was auto-generated. We will answer as soon as possible!</p>
       </main>
       `,
     };
