@@ -17,6 +17,7 @@ const Navbar = () => {
           onClick={() => scrollTo("welcome")}
           width={48}
           height={48}
+          priority
         />
 
         {/* Desktop */}
